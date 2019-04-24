@@ -5,11 +5,14 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
+    "@material-ui/lab": "^3.0.0-alpha.30",
     "apollo-cache-inmemory": "^1.5.1",
     "apollo-client": "^2.5.1",
     "apollo-upload-client": "^10.0.0",
     "graphql": "^14.2.1",
     "graphql-tag": "^2.10.1",
+    "openseadragon": "^2.4.0",
+    "rc-table": "^6.5.0",
     "react": "^16.8.6",
     "react-apollo-hooks": "^0.4.5",
     "react-dom": "^16.8.6",
@@ -30,5 +33,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  }
 }

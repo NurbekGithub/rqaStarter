@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -68,7 +69,7 @@ const categories = [
     id: 'Develop',
     children: [
       { id: 'Authentication', icon: <PeopleIcon />, active: true },
-      { id: 'Database', icon: <DnsRoundedIcon /> },
+      { id: '/research-journal', icon: <DnsRoundedIcon /> },
       { id: 'Storage', icon: <PermMediaOutlinedIcon /> },
       { id: 'Hosting', icon: <PublicIcon /> },
       { id: 'Functions', icon: <SettingsEthernetIcon /> },
@@ -125,6 +126,8 @@ function MuiDrawer({ classes, setDrawerOpen, drawerOpen }) {
               <ListItem
                 button
                 dense
+                component={Link}
+                to={childId}
                 key={childId}
                 className={`
                   ${classes.item}

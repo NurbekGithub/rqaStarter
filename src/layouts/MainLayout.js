@@ -7,7 +7,7 @@ import './layout.module.css';
 export default function MainLayout({children}) {
   const [drawerOpen, setDrawerOpen] = useState(false)
   return (
-    <Grid container direction='column' style={{ height: '100vh' }}>
+    <Grid container direction='column' wrap='nowrap' style={{ height: '100vh' }}>
       <Header setDrawerOpen={setDrawerOpen}/>
       <main>
         <MuiDrawer

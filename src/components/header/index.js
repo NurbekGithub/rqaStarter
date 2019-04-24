@@ -8,15 +8,18 @@ import MenuIcon from '@material-ui/icons/Menu';
 import './header.module.css';
 
 export default function Header({ setDrawerOpen }) {
+  function openDrawer() {
+    setDrawerOpen(true);
+  }
   return (
     <header>
       <AppBar position="static">
         <Toolbar>
-          <IconButton onClick={() => setDrawerOpen(true)} className='menuButton' color="inherit" aria-label="Menu">
+          <IconButton onClick={openDrawer} className='menuButton' color="inherit" aria-label="Menu">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit">
-            Eyes
+            EyeSee
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
